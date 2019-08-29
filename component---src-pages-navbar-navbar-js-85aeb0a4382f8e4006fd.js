@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{187:function(e,a,n){"use strict";n.r(a);var t=n(0),c=n.n(t),o=n(66),r=n.n(o);n(191);a.default=function(){return c.a.createElement("div",{className:"navBar"},"Nate Donato",c.a.createElement("span",null,c.a.createElement(r.a,{to:"/"},"Index"),c.a.createElement(r.a,{to:"/page2"},"Txt")))}}}]);
+//# sourceMappingURL=component---src-pages-navbar-navbar-js-85aeb0a4382f8e4006fd.js.map
