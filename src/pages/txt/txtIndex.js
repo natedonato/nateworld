@@ -9,8 +9,8 @@ class TxtIndex extends React.Component {
         this.state = {
             active: null,
             txts: [{ name: "junkyard", text: "hey people" },
-                { name: "the_office", text: "yep this is a txt" }, { name: "junkyard", text: "hey people" },
-                { name: "THECAPS", text: "Hey there partner" }, { name: "junkyard", text: "hey people" },
+                { name: "the_office", text: "i went in once \nafter hours and\nshit on the carpet." }, { name: "junkyard", text: "nothing to see here" },
+                { name: "THECAPS", text: "Hey there \n partner" }, { name: "junkyard", text: "hey people" },
                 { name: "the_office", text: "yep this is a txt" }, { name: "junkyard", text: "hey people" },
                 { name: "the_office", text: "yep this is a txt" }]
         };
@@ -29,7 +29,7 @@ class TxtIndex extends React.Component {
         return (
             <div className="iconContainer" >
                     {this.state.txts.map((file, index) => (
-                        <div className="txtItem" key={index} tabIndex="0" onDoubleClick={()=> this.toggleActive(file)}>
+                        <div className="txtItem" key={index} tabIndex="0" onDoubleClick={()=> {this.closeWindow(); this.toggleActive(file)}}>
 
                             <img src={txtImage} alt=""/>
                             <span>{file.name + ".txt"}</span>
