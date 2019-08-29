@@ -1,3 +1,13 @@
-import React from "react"
+import React from "react";
+import NavBar from './navbar/navbar';
+import './reset.css';
 
-export default () => <div>Hello world!</div>
+function root () {
+    return(
+    <div className="app">
+        <NavBar />
+    </div>
+    )
+}
+
+export default root;

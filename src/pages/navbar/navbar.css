@@ -1,0 +1,9 @@
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+}
+
+.navBar > span > a{
+    margin: 0px 5px;
+}
