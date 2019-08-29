@@ -17,9 +17,9 @@ class TxtIndex extends React.Component {
 
     render(){
         return (
-            <div className="iconContainer">
+            <div className="iconContainer" >
                     {this.state.txts.map((file, index) => (
-                        <div className="txtItem" key={index}>
+                        <div className="txtItem" key={index} tabIndex="0" onDoubleClick={()=> alert("hey")}>
                             <img src={txtImage} alt=""/>
                             <span>{file.name + ".txt"}</span>
                         </div>

@@ -7,6 +7,7 @@
 }
 
 .txtItem{
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -20,9 +21,22 @@
     width: 48px;
     height: 48px;
     margin: 5px;
+    cursor: pointer;
 }
 
-/* body{
-    height: 100vh;
-    background: teal;
-} */
+.txtItem > span{
+    cursor: pointer;
+}
+
+.txtItem:focus{
+    outline: none;
+}
+
+.txtItem:focus > span {
+    background: #000080;
+    padding: 0px 5px;
+}
+
+.txtItem:focus > img{
+    filter: sepia(90%) hue-rotate(175deg) saturate(6) brightness(0.9);
+}

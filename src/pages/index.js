@@ -4,9 +4,13 @@ import './reset.css';
 
 function root () {
     return(
-    <div className="app">
+    <>
         <NavBar />
-    </div>
+        <div className="app">
+            Hey welcome to the index page!
+            Theres not much here...
+        </div>
+    </>
     )
 }
 

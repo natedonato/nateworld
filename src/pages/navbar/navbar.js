@@ -5,11 +5,14 @@ import './navbar.css';
 function NavBar() {
     return (
         <div className="navBar"> 
-            Nate Donato
-            <span>
-                <Link to="/">Index</Link>
-                <Link to="/page2">Txt</Link>
-            </span>
+            <Link to="/" className="colorBox">
+                <div />
+                Nate Donato
+            </Link>
+            <div>
+                <Link to="/" activeClassName="activeLink" >Index</Link>
+                <Link to="/txt" activeClassName="activeLink" >Txt</Link>
+            </div>
         </div>
     )
 }
