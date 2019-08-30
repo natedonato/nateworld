@@ -4,6 +4,7 @@ planned to be at unique domain soon
 
 ## planned features
 -splash
+-index / directory
 -about
 -txt
 -zines
