@@ -14,6 +14,7 @@ planned to be at unique domain soon
   -games
 -animations
 -photos
+-videos
 -links
 -blog
 -circus
