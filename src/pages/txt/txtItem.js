@@ -3,7 +3,9 @@ import React from "react";
 class txtItem extends React.Component{
     constructor(props){
         super(props);
-        this.state = {text: props.file.text};
+        if(this.props.file){
+            this.state = { text: this.props.file.text };
+        }
     }
 
     componentDidUpdate(prevProps) {
@@ -20,6 +22,10 @@ class txtItem extends React.Component{
     }
 
     render(){
+        if(!this.props.file){
+            return null;
+        }
+
         return (
             <div style={{ zIndex: 10 }} className="txtWindow">
                 <div className="txtWindowNav" onClick={this.props.closeWindow}>
