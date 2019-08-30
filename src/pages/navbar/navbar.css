@@ -4,6 +4,7 @@
     align-items: center;
     background: white;
     height: 40px;
+    flex-shrink: 0;
     font-size: 18px;
 }
 

@@ -3,7 +3,7 @@ import './txt.css';
 import txtImage from './txt.png';
 import TxtItem from './txtItem';
 
-class TxtIndex extends React.Component {
+export default class TxtIndex extends React.Component {
     constructor(props){
         super(props);
         this.state = {
@@ -25,14 +25,13 @@ class TxtIndex extends React.Component {
     }
 
     render(){
-        console.log(this.state);
         return (
             <div className="iconContainer" >
-                    {this.state.txts.map((file, index) => (
-                        <div className="txtItem" key={index} tabIndex="0" onDoubleClick={()=> {this.closeWindow(); this.toggleActive(file)}}>
+                {this.props.data.allMarkdownRemark.edges.map((file) => (
+                        <div className="txtItem" key={file.node.id} tabIndex="0" onDoubleClick={()=> {this.closeWindow(); this.toggleActive(file)}}>
 
                             <img src={txtImage} alt=""/>
-                            <span>{file.name + ".txt"}</span>
+                            <span>{file.node.frontmatter.title + ".txt"}</span>
                         </div>
                     ))}
                 {this.state.active !== null ? <TxtItem file={this.state.active} closeWindow={this.closeWindow.bind(this)} /> : null}
@@ -40,5 +39,3 @@ class TxtIndex extends React.Component {
         )
     }
 }
-
-export default TxtIndex;

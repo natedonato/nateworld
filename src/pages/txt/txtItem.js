@@ -4,14 +4,14 @@ class txtItem extends React.Component{
     constructor(props){
         super(props);
         if(this.props.file){
-            this.state = { text: this.props.file.text };
+            this.state = { text: this.props.file.node.rawMarkdownBody };
         }
     }
 
     componentDidUpdate(prevProps) {
-        if(this.props.file.text !== prevProps.file.text)
+        if(this.props.file.node.id !== prevProps.file.node.id)
         {
-            this.setState({text: this.props.file.text});
+            this.setState({text: this.props.file.node.rawMarkdownBody});
         }
     } 
 
@@ -29,7 +29,7 @@ class txtItem extends React.Component{
         return (
             <div style={{ zIndex: 10 }} className="txtWindow">
                 <div className="txtWindowNav" onClick={this.props.closeWindow}>
-                    {this.props.file.name}
+                    {this.props.file.node.frontmatter.title }
                 </div>
                 <textarea className="txtWindowtextarea" 
                 value={this.state.text} 

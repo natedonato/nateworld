@@ -1,8 +1,21 @@
---
-title: "the office"
---
+---
+title: junkyard
+---
+junkyard buddha
+use same bowl of styrofoam 17 years
+on a trash heap circled by desert
+he say "eat
+and sleep.
+"
 
-i went in once
-after hours
+junkyard buddha make fire
+from drain oil
+and car battery,
 
-and shit on the carpet.
+soup
+from chicken bone
+and greasy takeout box,
+
+life
+from garbage
+and dust
