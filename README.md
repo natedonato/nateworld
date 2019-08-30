@@ -4,7 +4,7 @@ planned to be at unique domain soon
 
 ## planned features
 -splash
--index / directory
+-map
 -about
 -txt
 -zines
@@ -16,7 +16,7 @@ planned to be at unique domain soon
 -photos
 -links
 -blog
--circus 
+-circus
 -secret stuff
 
 
