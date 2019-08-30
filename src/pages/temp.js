@@ -4,10 +4,9 @@ import { graphql } from "gatsby";
 export default ({ data }) => (
     <div>
         <h1>About {data.site.siteMetadata.title}</h1>
-        {console.log(data)}
         <p>
-            We're the only site running on your computer dedicated to showing the best
-            photos and videos of pandas eating lots of food.
+            I made this site using Gatsby and React from the ground up using very few plugins or external libraries.  This is the page I use to test GraphQL queries.
+            Welcome.
     </p>
     </div>
 )
@@ -18,17 +17,6 @@ export const query = graphql`
       siteMetadata {
         title
       }
-    }
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/(/txt/txtposts)/.*.md$/" } }, sort: { fields: id, order: DESC }) {
-        edges {
-            node {
-                id
-                rawMarkdownBody
-                frontmatter {
-                    title
-                }
-            }
-        }
     }
 }
 `

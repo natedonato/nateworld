@@ -25,4 +25,7 @@ planned to be at unique domain soon
 Gatsby
 React
 
-to-do next: markdown & graphql stuff, txt styling, work on splash
+to-do next: txt styling (x, draggable, resizeable?, menu bar)
+splash page
+simple about page
+then photo gallery page?
