@@ -7,12 +7,7 @@ export default class TxtIndex extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            active: null,
-            txts: [{ name: "junkyard", text: "hey people" },
-                { name: "the_office", text: "i went in once \nafter hours and\nshit on the carpet." }, { name: "junkyard", text: "nothing to see here" },
-                { name: "THECAPS", text: "Hey there \n partner" }, { name: "junkyard", text: "hey people" },
-                { name: "the_office", text: "yep this is a txt" }, { name: "junkyard", text: "hey people" },
-                { name: "the_office", text: "yep this is a txt" }]
+            active: null
         };
     }
 
@@ -25,11 +20,11 @@ export default class TxtIndex extends React.Component {
     }
 
     render(){
+        if(!this.props.data){return null;}
         return (
             <div className="iconContainer" >
                 {this.props.data.allMarkdownRemark.edges.map((file) => (
                         <div className="txtItem" key={file.node.id} tabIndex="0" onDoubleClick={()=> {this.closeWindow(); this.toggleActive(file)}}>
-
                             <img src={txtImage} alt=""/>
                             <span>{file.node.frontmatter.title + ".txt"}</span>
                         </div>

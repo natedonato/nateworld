@@ -1,4 +1,5 @@
 import React from "react";
+import {graphql} from 'gatsby';
 import NavBar from "./navbar/navbar";
 import TxtIndex from './txt/txtIndex';
 
@@ -12,7 +13,6 @@ function txtPage({ data }) {
 }
 
 export default txtPage;
-
 
 export const query = graphql`
   query {
