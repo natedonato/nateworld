@@ -18,7 +18,7 @@ planned to be at unique domain soon
 -links
 -blog
 -circus
--secret stuff
+-secrets
 
 
 ### tools
