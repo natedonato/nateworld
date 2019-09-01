@@ -47,15 +47,17 @@
 .txtWindow{
     overflow: hidden;
     position: absolute;
+    top: 90px;
+    left: 50px;
     background: #c0c0c0;
     border-top: 1px solid #dfdfdf;
     border-left: 1px solid #dfdfdf;
     border-right: 1px solid #000;
     border-bottom: 1px solid #000;
     padding: 2px;
-    height: 200px;
-    width: 300px;
-    margin: 100px;
+    /* height: 200px;
+    width: 300px; */
+    font-size: 0px;
 }
 .txtWindowNav{
     color: white;
@@ -68,12 +70,13 @@
 
 .txtWindowtextarea{
     background: white;
-    width: 100%;
-    height: calc(100% - 16px);
+    width: 250px;
+    height: 300px;
+    min-width: 120px;
     padding: 2px;
     box-sizing: border-box;
     white-space: pre-line;
-    resize: none;
+    /* resize: none; */
 }
 
 .txtWindowtextarea:focus{
