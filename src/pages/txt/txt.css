@@ -82,3 +82,15 @@
 .txtWindowtextarea:focus{
     outline: none;
 }
+
+.menuBar{
+    width: 100%;
+    height: 19px;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2px 5px;
+    margin: 0px 0px;
+    color: grey;
+    font-weight: 200;
+    cursor: default;
+}

@@ -31,6 +31,11 @@ class txtItem extends React.Component{
                 <div className="txtWindowNav" onClick={this.props.closeWindow}>
                     {this.props.file.node.frontmatter.title }
                 </div>
+                {/* <div className="menuBar">
+                    <span> File </span>
+                    <span> Edit </span>
+                    <span> Help </span>
+                </div> */}
                 <textarea className="txtWindowtextarea" 
                 value={this.state.text} 
                 onChange={(e) => this.handleChange(e)} />

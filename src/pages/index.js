@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from './navbar/navbar';
-import Animation from './animatedlogo/animation2';
+import Animation from './animatedlogo/animation';
 import './reset.css';
 
 function root () {
