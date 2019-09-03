@@ -14,7 +14,7 @@ and car battery,
 
 soup
 from chicken bone
-and greasy takeout box,
+and carrot stem,
 
 life
 from garbage

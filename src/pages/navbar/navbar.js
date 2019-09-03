@@ -2,9 +2,9 @@ import React from "react";
 import Link from "gatsby-link";
 import './navbar.css';
 
-function NavBar() {
+function NavBar({style}) {
     return (
-        <div className="navBar"> 
+        <div className="navBar" style={style}> 
             <Link to="/" className="colorBox">
                 <div />
                 Nate Donato
