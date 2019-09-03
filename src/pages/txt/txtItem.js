@@ -1,4 +1,5 @@
 import React from "react";
+import Draggable from 'react-draggable';
 
 class txtItem extends React.Component{
     constructor(props){
@@ -27,9 +28,19 @@ class txtItem extends React.Component{
         }
 
         return (
-            <div style={{ zIndex: 10 }} className="txtWindow">
-                <div className="txtWindowNav" onClick={this.props.closeWindow}>
-                    {this.props.file.node.frontmatter.title }
+            <Draggable
+                handle=".handle"
+                defaultPosition={{ x: 0, y: 0 }}
+                position={null}
+                scale={1}
+                onStart={this.handleStart}
+                onDrag={this.handleDrag}
+                onStop={this.handleStop}>
+                <div style={{ zIndex: 10 }} className="txtWindow">
+                <div className="txtWindowNav handle">
+                        <span>{this.props.file.node.frontmatter.title}</span>
+
+                        <div onClick={this.props.closeWindow} className="closeButton"> x </div>
                 </div>
                 {/* <div className="menuBar">
                     <span> File </span>
@@ -39,7 +50,8 @@ class txtItem extends React.Component{
                 <textarea className="txtWindowtextarea" 
                 value={this.state.text} 
                 onChange={(e) => this.handleChange(e)} />
-            </div>
+                </div>
+            </Draggable>
         )
         }
 }
