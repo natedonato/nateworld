@@ -3,22 +3,43 @@ currently WIP at https://natedonato.com/nateworld/
 planned to be at unique domain soon
 
 ## planned features
--splash
--map
--about
--txt
--zines
+
+-cool splash
+
+-site map / fancy nav bar
+
+-about me & contact
+
+-txt zone
+ideas & questions?
+
+-zines & pdfs
+
 -music 
   -bands
+
 -projects
   -games
+  -micro
+
+
+gallery:
 -animations
 -photos
 -videos
--links
+
+-links / media list
+
 -blog
+
 -circus
+  -chatroom
+  -keyboard
+  -pictonary?
+
 -secrets
+
+-404 page
 
 
 ### tools
