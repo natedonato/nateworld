@@ -1,0 +1,9 @@
+.splashImage{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border: 1px solid  black;
+}
+
+.splashImage { opacity: 1; transition: opacity 0.3s; }
+/* .splashImage-loaded { opacity: 1; }  */
