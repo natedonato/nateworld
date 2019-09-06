@@ -46,7 +46,6 @@ gallery:
 Gatsby
 React
 
-to-do next: txt styling (x, draggable, resizeable?, menu bar)
-splash page
-simple about page
-then photo gallery page?
+to-do next: photo gallery styling and components, filters?
+more splash page
+about page
