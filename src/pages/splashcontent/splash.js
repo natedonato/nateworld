@@ -26,7 +26,10 @@ export default class Splash extends React.Component{
 
     render(){
         return(
-            <img src={this.state.bank[this.state.active]} alt="me" className="splashImage" onClick={()=>this.nextImage()}/>
+            <div className="splashBox">
+                {/* <img src={this.state.bank[this.state.active]} alt="me" className="splashImage" onClick={()=>this.nextImage()}/> */}
+                <h1 className="nate">Nate Donato</h1>
+            </div>
         )
     }
 }

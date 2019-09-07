@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Slideshow from './photos/slideshow';
 
 export default ({ data }) => (
     <div>
@@ -8,8 +7,7 @@ export default ({ data }) => (
         <p>
             I made this site using Gatsby and React from the ground up using very few plugins or external libraries.  This is the page I use to test GraphQL queries.
             Welcome.
-    </p>
-    <Slideshow />
+        </p>
     </div>
 )
 

@@ -66,10 +66,12 @@ div[role="group"][tabindex] {
 	background-color: grey;
 	padding: 10px;
 	flex-grow: 1;
-	background-image: url(bg2.jpg);
+	background-image: url(bg3.jpg);
 	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+

@@ -11,6 +11,7 @@ function NavBar({style}) {
             </Link>
             <div>
                 <Link to="/" activeClassName="activeLink" >Index</Link>
+                <Link to="/gifs" activeClassName="activeLink" >Gif</Link>
                 <Link to="/txt" activeClassName="activeLink" >Txt</Link>
             </div>
         </div>
