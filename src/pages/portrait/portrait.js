@@ -4,7 +4,9 @@ import './portrait.css';
 export default class Splash extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { bank: this.props.data.allFile.edges, active: 0 };
+        if(this.props.data){
+            this.state = { bank: this.props.data.allFile.edges, active: 0 };
+        }
         this.nextImage = this.nextImage.bind(this);
 
     }
@@ -23,6 +25,7 @@ export default class Splash extends React.Component {
     }
 
     render() {
+        if (!this.props.data) { return null; }
         return (
             <div className="frame">
                 <img src={this.state.bank[this.state.active].node.publicURL} alt="me" className="portraitIMG" onClick={()=>this.nextImage()}/>
