@@ -1,14 +1,12 @@
 import React from "react";
-import nate from './nate.jpg';
-import nate2 from './test.jpg';
-import nate3 from './me3.jpg';
 import './portrait.css';
 
 export default class Splash extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { bank: [nate2, nate, nate3], active: 0 };
+        this.state = { bank: this.props.data.allFile.edges, active: 0 };
         this.nextImage = this.nextImage.bind(this);
+
     }
 
     componentDidMount() {
@@ -27,7 +25,7 @@ export default class Splash extends React.Component {
     render() {
         return (
             <div className="frame">
-                <img src={this.state.bank[this.state.active]} alt="me" className="portraitIMG" onClick={()=>this.nextImage()}/>
+                <img src={this.state.bank[this.state.active].node.publicURL} alt="me" className="portraitIMG" onClick={()=>this.nextImage()}/>
             </div>
         )
     }
