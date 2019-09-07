@@ -63,7 +63,7 @@ div[role="group"][tabindex] {
 }
 
 .app{
-	background-color: grey;
+	background-color: #034f5c;
 	padding: 10px;
 	flex-grow: 1;
 	background-image: url(bg3.jpg);
