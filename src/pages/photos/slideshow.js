@@ -35,7 +35,12 @@ export default function SlideShow() {
                 </div>
                 <div className="imgGallery">
                 {allFile.edges.map((edge, idx) => 
-                    <img alt="small gif"src={edge.node.publicURL} key={idx} onClick={() => setIndex(idx)} className="thumbnail"></img>
+                    <img alt="small gif" src={edge.node.publicURL} key={idx} onClick={() => {
+                    setIndex(idx); window.scrollTo({
+                        top: 0,
+                        behavior: 'auto'
+                    });
+                    }} className="thumbnail"></img>
                 )}
                 </div>
             </div>
