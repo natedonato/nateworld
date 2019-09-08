@@ -20,7 +20,7 @@
     border-left-color: #ad7e36;
     border-radius: 2px;
     border-right-color: #ad7e36;
-    border-top-color: #8a652d;
+    border-top-color: #9e7332;
 
 
 
@@ -74,12 +74,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    background-repeat: repeat;
-    background-size: 50%;
+  background-repeat: repeat;
+  background-size: 50%;
 }
 
 .portraitIMG{
-    max-width: 450px;
-    width: calc(100vw - 85px);
-    height: auto;
+  max-width: 450px;
+  width: calc(100vw - 112px);
+  height: auto;
 }

@@ -6,7 +6,7 @@ import TxtIndex from './txt/txtIndex';
 function txtPage({ data }) {
     return (
         <div style={{ background: "teal", height: "100%"}}>
-            <NavBar />
+            <NavBar style={{ background: "#c0c0c0"}}/>
             <TxtIndex data={data}/>
         </div>
     )

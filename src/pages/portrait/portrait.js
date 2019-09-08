@@ -28,7 +28,7 @@ export default class Splash extends React.Component {
         if (!this.props.data) { return null; }
         return (
             <div className="frame">
-                <img src={this.state.bank[this.state.active].node.publicURL} alt="me" className="portraitIMG" onClick={()=>this.nextImage()}/>
+                <img src={"/nateworld/" + this.state.bank[this.state.active].node.publicURL} alt="me" className="portraitIMG" onClick={()=>this.nextImage()}/>
             </div>
         )
     }
