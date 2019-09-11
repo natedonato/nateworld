@@ -16,6 +16,16 @@ class txtItem extends React.Component{
         }
     } 
 
+    downloadTxtFile(){
+        const element = document.createElement("a");
+        // const text = this.state.text;
+        const file = new Blob([this.state.text], { type: 'text/plain' });
+        element.href = URL.createObjectURL(file);
+        element.download = this.props.file.node.frontmatter.title;
+        document.body.appendChild(element); // Required for this to work in FireFox
+        element.click();
+    }
+
     handleChange(e) {
         this.setState({
             text: e.target.value
@@ -42,11 +52,17 @@ class txtItem extends React.Component{
 
                         <div onClick={this.props.closeWindow} className="closeButton"> x </div>
                 </div>
-                {/* <div className="menuBar">
-                    <span> File </span>
+                    <div className="menuBar">
+                    <div className="file">
+                    <span className="file fileButton" > File </span >
+                        <div className="file-content">
+                                <div onClick={() => this.downloadTxtFile()}>Save</div>
+                                <div onClick={this.props.closeWindow}>Exit</div>
+                    </div>
+                    </div>
                     <span> Edit </span>
                     <span> Help </span>
-                </div> */}
+                </div>
                 <textarea className="txtWindowtextarea" 
                 value={this.state.text} 
                 onChange={(e) => this.handleChange(e)} />
