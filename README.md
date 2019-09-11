@@ -46,6 +46,11 @@ gallery:
 Gatsby
 React
 
-to-do next: photo gallery styling and components, filters?
+to-do next: gif component rework (filters?), 
+projects, 
+about / contact
 more splash page
-about page
+
+to-do future: txt saving and copying (file / edit menu)
+curating faces and adding controls
+mobile nav bar dropdown
