@@ -83,3 +83,20 @@
   width: calc(100vw - 112px);
   height: auto;
 }
+
+.controls{
+  width: calc(100% - 16vmin);
+  position: absolute;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-size: 24px;
+  color: white;
+  opacity: 0.8;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px #474747;
+}

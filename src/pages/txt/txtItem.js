@@ -63,7 +63,7 @@ class txtItem extends React.Component{
                     <span> Edit </span>
                     <span> Help </span>
                 </div>
-                <textarea className="txtWindowtextarea" 
+                <textarea spellcheck="false" className="txtWindowtextarea" 
                 value={this.state.text} 
                 onChange={(e) => this.handleChange(e)} />
                 </div>
