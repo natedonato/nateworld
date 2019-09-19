@@ -47,6 +47,8 @@ Gatsby
 React
 
 to-do next: 
+projects component!
+
 nav bar with under construction links, mobile drop down version
 gif component rework (filters?), 
 projects, 

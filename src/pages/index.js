@@ -8,7 +8,7 @@ function root () {
         <>
         <div style={{ height: "100%", display: "flex", flexFlow: "column"}}>
             <NavBar style={{ background: "transparent", color: "white", position: 'absolute', borderColor: 'white'}}/>
-        <div className="app">
+        <div className="app" style={{marginTop: "-40px"}}>
             <Splash />
         </div>
     </div>
